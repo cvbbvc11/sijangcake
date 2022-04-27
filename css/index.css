@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color:black; display: block; font-family: 'Noto Sans KR', sans-serif;
+}
+img {width:100%;}
+header, section, footer {
+    width:100%;
+    float: left;
+}
+header, section, footer, div {
+    box-sizing: border-box;
+}
+html, body { overflow-x:hidden; }
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    height:150px;
+    background-color:rgb(228, 226, 226);
+    position:relative;
+    z-index: 100;
+}
+header > div {
+    width:1760px;
+    margin:0 auto;
+}
+header .top_menu {
+    height: 80px;
+}
+header .top_menu .top_menu_list {
+    float: right;
+    margin-top:15px;
+}
+header .top_menu .top_menu_list > div {
+    margin:0 10px;
+    float: left;
+}
+header .top_menu .top_menu_list .member ul li {
+    float: left;
+}
+header .top_menu .top_menu_list .member ul li a {
+    padding:5px 10px;
+    font-size: 14px;
+}
+header .top_menu .top_menu_list .cake {
+    width:100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(19, 223, 155);
+    line-height: 27px;
+}
+header .top_menu .top_menu_list .cake a {
+    color:white;
+}
+header .top_menu .top_menu_list .mall {
+    width:100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: gray;
+    line-height: 27px;
+}
+header .top_menu .top_menu_list .mall a {
+    color:white;
+}
+header .menu_area {
+    height: 70px;
+    position:relative;
+    z-index: 30;
+}
+header .menu_area .menu1 {
+    float: left;
+}
+header .menu_area .menu2 {
+    float: right;
+}
+header .menu_area nav > ul > li {
+    margin:20px;
+    float: left;
+}
+header .menu_area nav > ul > li > a{
+    font-size: 15px;
+}
+header .menu_area nav > ul > li:hover > a {
+    color:rgb(39, 177, 231);
+}
+header .menu_area .logo {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width:200px;
+    bottom: 40px;
+}
+header .menu_area .sub {
+    margin-top:30px;
+    display: none;
+}
+header .menu_area .sub li a {
+    padding:15px 0 0;
+    font-size: 14px;
+    position:relative;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+header .menu_area .sub li a:after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width:0;
+    height: 2px;
+    background-color: aqua;
+    transition: all 0.5s;
+}
+header .menu_area .sub li:hover a:after {
+    width:100%;
+}
+header .menu_area nav,
+header .menu_area .search,
+header .menu_area .total_menu{
+    float: left;
+}
+header .menu_area .search,
+header .menu_area .total_menu{
+    width:26px;
+    margin:0 10px;
+    margin-top:18px;
+}
+header .sub_bg {
+    background-color: white;
+    position:absolute;
+    left: 0;
+    top:150px;
+    width:100%;
+    height: 150px;
+    box-shadow: 0px 2px 2px #ddd;
+    display: none;
+    z-index: 20;
+}
+header .search_area {
+    width:100%;
+    height: 200px;
+    position:absolute;
+    top:150px;
+    display: none;
+    background-color: white;
+}
+header .search_area .search_in {
+    width:650px;
+    height: 60px;
+    margin:80px auto;
+    border-bottom: 2px solid #111;
+}
+header .search_area .search_in input {
+    border:none;
+    width:600px;
+    float: left;
+    padding:15px 0;
+    font-size: 20px;
+    color:#999;
+    display: block;
+}
+header .search_area a {
+    width:50px;
+    float: right;
+}
+header .search_area input:focus {
+    outline: none;
+}
+header .search_area > a {
+    margin:0 auto;
+    float: none;
+    width: 22px;
+}
+section.visual .swiper {
+    width:90%;
+    margin:0 auto;
+    margin-top:80px;
+}
+.swiper {
+    overflow: visible;
+}
+.swiper-button-next {
+    right:-50px;
+}
+.swiper-button-next:after {
+    content: url('../img/next.png');
+}
+.swiper-button-prev {
+    left: -50px;
+}
+.swiper-button-prev:after {
+    content: url('../img/prev.png');
+}
